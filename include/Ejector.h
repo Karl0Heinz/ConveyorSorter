@@ -1,14 +1,12 @@
 #pragma once
 
 #include "Servo.h"
+#include "ServoDevice.h"
 
 /*
  * Ein Ejector stellt ein Gerät dar, das ein Objekt vom Fließband "schubst"
  */
-class Ejector {
-    /**
-     * Servo, der die Hauptkomponente des Ejectors darstellt
-     */
+class Ejector : public ServoDevice {
     Servo _servo;
 
 public:
