@@ -33,9 +33,6 @@ void loop() {
 
 void msgProc(const char *topic, const uint8_t *payload, unsigned int length) {
     if (strcmp(topic, DEMUX_TOPIC) == 0) {
-        //Serial.write("IS VALID");
-        Serial.write(payload, length);
-
         std::optional<EjectorInfo> maybeMetadata = getEjectorMetadata(payload, length);
 
         if (maybeMetadata.has_value()) {
@@ -48,7 +45,7 @@ void msgProc(const char *topic, const uint8_t *payload, unsigned int length) {
 }
 
 void TestEjectors() {
-    for (EjectorInfo metadata : ejectorMetadata) {
+    for (EjectorInfo metadata: ejectorMetadata) {
         metadata.ejector->Eject();
     }
 }
