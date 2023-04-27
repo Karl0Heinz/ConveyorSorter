@@ -16,19 +16,19 @@ static const char *const WIFI_SSID = "Projekt";
 #pragma endregion
 
 #pragma region DEVICES
-ConveyorBelt conveyorBelt(13);
+ConveyorBelt conveyorBelt(5);
 Ejector ejector1(14);
 Ejector ejector2(16);
 Ejector ejector3(12);
-Ejector ejector4(4);
+Ejector ejector4(13);
 #pragma endregion
 
 #pragma region DEVICE METADATA
 EjectorInfo ejectorMetadata[] = {
-        {"red",    &ejector1, 10.3},
-        {"green",  &ejector2, 7},
-        {"blue",     &ejector3, 19},
-        {"yellow", &ejector4, 12},
+        {"red",    &ejector1, 10.15},
+        {"green",  &ejector2, 13.9},
+        {"blue",     &ejector3, 20.2},
+        {"yellow", &ejector4, 23},
 };
 #pragma endregion
 
