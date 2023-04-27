@@ -27,7 +27,7 @@ Ejector ejector4(13);
 EjectorInfo ejectorMetadata[] = {
         {"red",    &ejector1, 10.15},
         {"green",  &ejector2, 13.9},
-        {"blue",     &ejector3, 20.2},
+        {"blue",     &ejector3, 19.2},
         {"yellow", &ejector4, 23},
 };
 #pragma endregion
