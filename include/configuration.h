@@ -17,10 +17,10 @@ static const char *const WIFI_SSID = "Projekt";
 
 #pragma region DEVICES
 ConveyorBelt conveyorBelt(5);
-Ejector ejector1(14);
+Ejector ejector1(12);
 Ejector ejector2(16);
-Ejector ejector3(12);
-Ejector ejector4(13);
+Ejector ejector3(13);
+Ejector ejector4(15);
 #pragma endregion
 
 #pragma region DEVICE METADATA
